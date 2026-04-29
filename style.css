@@ -1,0 +1,162 @@
+/*Import de la typo*/
+
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Ne change pas la taille de la boite si j'ajoute des padding ou des border*/
+}
+
+
+/*-----------
+    TEXTE
+-------------*/
+
+.decoration-none{
+    text-decoration: none; /*Retire la ligne sous les texte*/
+}
+
+.list-type-none{
+    list-style-type:none; /*Retire les puces des listes*/ 
+}
+
+.bold{
+    font-weight: 800; /*Met en gras*/
+}
+
+.text-center{
+    text-align: center; /*Centre le texte*/
+}
+
+.uppercase{
+    text-transform: uppercase; /*mettre en majuscule*/
+}
+
+.lowercase{
+    text-transform: lowercase; /*mettre en minuscule*/
+}
+
+
+/*-------------------------
+    Dimensions/Largeurs
+--------------------------*/
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-48{
+    width: 48%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+
+/*--------------
+    Flex Box
+---------------*/
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.gap-8{
+    gap: 8px;
+}
+
+.gap-16{
+    gap: 16px;
+}
+
+.gap-32{
+    gap: 32px;
+}
+
+
+/*------------------
+   Margin & Padding
+--------------------*/
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mt-32{
+    margin-top: 32px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.mt-128{
+    margin-top: 128px;
+}
+
+.pt-16{
+    padding-top: 16px;
+}
+
+.pb-16{
+    padding-bottom: 16px;
+}
+
+.pt-32{
+    padding-top: 16px;
+}
+
+.pb-32{
+    padding-bottom: 32px;
+}
+
+/*Containers*/
+
+.container-1200{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-1000{
+     max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-green{
+    background-color: green;
+}
