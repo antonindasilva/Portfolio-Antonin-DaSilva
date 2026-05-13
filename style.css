@@ -81,6 +81,10 @@ a{
     width: 100%;
 }
 
+w-80{
+    width: 80%;
+}
+
 .w-50{
     width: 50%;
 }
@@ -137,6 +141,10 @@ a{
 
 .justify-center{
     justify-content: center;
+}
+
+.column{
+    flex-direction: column;
 }
 
 .gap-8{
@@ -213,6 +221,10 @@ a{
 
 .pb-32{
     padding-bottom: 32px;
+}
+
+.pl-16{
+    padding-left: 16px;
 }
 
 /*Containers*/
