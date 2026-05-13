@@ -8,9 +8,24 @@
     box-sizing: border-box; /*Ne change pas la taille de la boite si j'ajoute des padding ou des border*/
 }
 
+path{
+    fill: #e2e8f0;
+}
+
+header{
+     background-color: transparent;
+    position: fixed;
+    color:#e2e8f0 ;
+    width: 100%;
+    transition: background-color 600ms linear;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 
 a{
     text-decoration: none;
+    color:#e2e8f0 
 }
 
 /*-----------
@@ -226,6 +241,10 @@ a{
 
 .bg-hero2{
     height: 100vh;
+    background:linear-gradient(to right,#0b0f19,#2c457f);
+}
+
+.bg-bleu{
     background:linear-gradient(to right,#0b0f19,#2c457f);
 }
 
