@@ -10,6 +10,16 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -20,15 +30,15 @@
     -------------->
     <header class="flex space-between pt-16">
 
-        <nav class="flex gap-16">
+        <nav class="flex gap-16 ft-family">
 
             <a href="">Acceuil</a>
-            <a href="">Projets</a>
-            <a href="">A propos</a>
+            <a href="#projets">Projets</a>
+            <a href="#parcours">Parcours</a>
 
         </nav>
 
-        <p>Antonin Da Silva</p>
+        <p class="ft-family">Antonin Da Silva</p>
 
         <nav>
 
@@ -59,18 +69,20 @@
         <!----------------
             SECTION HERO 
          ---------------->
-        <section class="bg-hero2 ">
+        <section class="bg-hero2">
 
             <div class="container-1200 flex align-center justify-center gap-32 pt-64">
                 <div class="w-50 ">
-                    <h1 class="ft-size-38 mb-32 grey">Bonjour, moi c'est Antonin !<br> Jeune développeur qui rêve grand !
+                    <h1 class="ft-size-35 mb-32 grey">Bonjour, moi c'est Antonin !<br> Jeune développeur qui rêve grand
+                        !
                     </h1>
 
-                    <p class="mb-64 grey">Entre mêlées et lignes de code, une même logique: progresser ensemble pour
+                    <p class="mb-64 grey ft-family">Entre mêlées et lignes de code, une même logique: progresser
+                        ensemble pour
                         atteindre l'objectif.</p>
 
 
-                    <div class="ml-64 flex gap-128">
+                    <div class="ml-64 flex gap-128 ft-family">
                         <a class="grey btn-black" href="">Mon travail</a>
                         <a class="grey btn-black" href="">Contactez moi</a>
                     </div>
@@ -85,22 +97,24 @@
         <!---------------------
             SECTION PROJETS 
          --------------------->
-        <section class="flex column container-1200 ">
+        <section class="flex column container-1200 " id="projets">
 
-            <h2 class="mt-64 ft-size-38">Mes Projets</h2>
+            <h2 class="mt-64 ft-size-38 blue ft-size-35">Mes Projets</h2>
 
             <!-- PROJET 1 -->
-            <div class="w-80 bg-bleu-2 flex mb-64 mt-64">
-                <div class="w-50 grey flex pl-16 pt-16">
-                    <h3>Projet Interno</h3>
+            <div class="w-100 bg-bleu-2 flex mb-64 mt-64 " data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="w-50 grey flex pl-16 pt-16" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h3 class="ft-size-25">Projet Interno</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, animi incidunt sed quibusdam
-                        quidem nesciunt ipsum vitae, voluptates fugit excepturi, nihil veniam ipsa. Aliquam consectetur
-                        culpa rem consequatur eius at?</p>
+                    <p class="ft-family pr-16">Projet réalisé durant la formation La Toile lors d'un exercice pour
+                        s'entrainer sur la
+                        manipulation des flexbox.</p>
 
 
                     <div class="w-50">
-                        <a class="btn-black-2" href="">En savoir plus</a>
+                        <a class="btn-black-2 ft-family" href="interno.html">En savoir plus</a>
                     </div>
                 </div>
 
@@ -108,16 +122,18 @@
             </div>
 
             <!-- PROJET 2 -->
-            <div class="w-80 bg-bleu-2 flex mb-64">
-                <div class="w-50 flex grey pl-16 pt-16">
-                    <h3>Projet MNTN-Intégration</h3>
+            <div class="w-100 bg-bleu-2 flex mb-64" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="w-50 flex grey pl-16 pt-16" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                    <h3 class="ft-size-25">Projet MNTN-Intégration</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sed culpa laborum perferendis
-                        tempore libero aliquam blanditiis nesciunt labore excepturi ipsam dolores ipsum quos pariatur
-                        minima, perspiciatis tempora, voluptates hic?</p>
+                    <p class="ft-family pr-16">Projet réalisé durant la formation La Toile lors d'un exercice pour
+                        s'entrainer sur les
+                        positions.</p>
 
                     <div class="w-50">
-                        <a class="btn-black-2" href="">En savoir plus</a>
+                        <a class="btn-black-2 ft-family" href="MNTN.html">En savoir plus</a>
                     </div>
                 </div>
 
@@ -125,21 +141,65 @@
             </div>
 
             <!-- PROJET 3 -->
-            <div class="w-80 bg-bleu-2 flex mb-64">
-                <div class="w-50 grey flex pl-16 pt-16">
-                    <h3>Projet d'évaluations HTML/CSS</h3>
+            <div class="w-100 bg-bleu-2 flex mb-64" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="w-50 grey flex pl-16 pt-16" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h3 class="ft-size-25">Projet d'évaluations HTML/CSS</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minus dignissimos quibusdam est,
-                        repellat necessitatibus natus quo nemo iste exercitationem non odit placeat molestias
-                        repudiandae unde eligendi excepturi magni neque.</p>
+                    <p class="ft-family pr-16">Première évaluation après trois semaines de formation,<br> le but était
+                        d'utiliser tout ce que
+                        l'on avait appris durant ces trois semaines sur HTML/CSS.</p>
 
                     <div class="w-50">
-                        <a class="btn-black-2" href="">En savoir plus</a>
+                        <a class="btn-black-2 ft-family" href="evaluation.html">En savoir plus</a>
                     </div>
                 </div>
 
                 <img class="w-50 radius-right" src="asset/Eval.png" alt="image du projet">
             </div>
+
+
+            <!-- PROJET 4 -->
+            <div class="w-100 bg-bleu-2 flex mb-64" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="w-50 grey flex pl-16 pt-16" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                    <h3 class="ft-size-25">Projet UI/UX </h3>
+
+                    <p class="ft-family">Premier projet réalisé en groupe avec l'utilisation de Figma.</p>
+
+                    <div class="w-50">
+                        <a class="btn-black-2 ft-family" href="">En savoir plus</a>
+                    </div>
+                </div>
+
+                <img class="w-50 radius-right" src="asset/{3CC3CCA2-B90A-4052-A116-037D825A8CDA}.png"
+                    alt="image du projet">
+            </div>
+
+
+
+            <!-- PROJET 5 -->
+            <div class="w-100 bg-bleu-2 flex mb-64" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="w-50 grey flex pl-16 pt-16" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h3 class="ft-size-25">Projet Tudo De Bom</h3>
+
+                    <p class="ft-family pr-16">Deuxième évaluation après trois semaines de JavaScript, le but était
+                        d'utiliser tout ce que l'on
+                        avait appris durant ces trois semaines sur JavaScript </p>
+
+                    <div class="w-50">
+                        <a class="btn-black-2 ft-family" href="">En savoir plus</a>
+                    </div>
+                </div>
+
+                <img class="w-50 radius-right" src="asset/Tudo_de_bom.png" alt="image du projet">
+            </div>
+
+
 
         </section>
 
@@ -148,51 +208,70 @@
             SECTION PARCOURS
          ---------------------->
 
-        <section class="bg-hero2 grey mt-64">
+        <section class="bg-hero2 grey mt-64" id="parcours">
 
-            <h2 class="ft-size-38 mb-64 container-1200 pt-64">Mon Parcours</h2>
+            <h2 class="ft-size-38 mb-32 container-1200 pt-64 ft-size-35">Mon Parcours</h2>
 
             <div class="container-1200 flex space-between align-center pt-32">
                 <div class="w-20">
-                    <h3 class="mb-16">DATE</h3>
+                    <h3 class="mb-16">Livreur / Monteur de mobilier de bureau (2018–2019)</h3>
 
-                    <h4 class="mb-16">intitulé du poste-entreprise</h4>
+                    <h4 class="mb-16">Cette expérience m’a permis de développer des compétences transversales
+                        essentielles :</h4>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa qui, asperiores earum
-                        veritatis ullam perspiciatis eum officia aspernatur nisi hic neque aperiam natus rerum! Atque
-                        illum libero id voluptatum!</p>
+                    <ul>
+                        <li>Gestion des priorités et organisation</li>
+                        <li>Autonomie et résolution de problèmes</li>
+                        <li>Travail d’équipe et communication client</li>
+                        <li>Rigueur opérationnelle et adaptabilité</li>
+                        <li>Planification et gestion logistique</li>
+                    </ul>
                 </div>
 
                 <div class="w-20">
-                    <h3 class="mb-16">DATE</h3>
+                    <h3 class="mb-16">Streamer – Twitch (2019 – 2020)</h3>
 
-                    <h4 class="mb-16">intitulé du poste-entreprise</h4>
+                    <h4 class="mb-16">Passionné de jeux vidéo, j’ai entrepris une activité de streaming sur Twitch, me
+                        permettant de développer certaines compétences:</h4>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa qui, asperiores earum
-                        veritatis ullam perspiciatis eum officia aspernatur nisi hic neque aperiam natus rerum! Atque
-                        illum libero id voluptatum!</p>
+                    <ul>
+                        <li>Planification et maintien d’une régularité de diffusion</li>
+                        <li>Gestion autonome d’un projet digital</li>
+                        <li>Organisation du temps et discipline personnelle</li>
+                        <li>Communication et interaction avec une communauté</li>
+                        <li>Capacité d’adaptation et apprentissage continu</li>
+                    </ul>
                 </div>
 
 
                 <div class="w-20">
-                    <h3 class="mb-16">DATE</h3>
+                    <h3 class="mb-16">Agent de maintenance de matériels incendie (Nov. 2020 – Juil. 2026)</h3>
 
-                    <h4 class="mb-16">intitulé du poste-entreprise</h4>
+                    <h4 class="mb-16">Cette expérience m’a permis de développer de nouvelles compétences: </h4>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa qui, asperiores earum
-                        veritatis ullam perspiciatis eum officia aspernatur nisi hic neque aperiam natus rerum! Atque
-                        illum libero id voluptatum!</p>
+                    <ul>
+                        <li>Maintenance et contrôle d’équipements techniques</li>
+                        <li>Application stricte des normes de sécurité</li>
+                        <li>Organisation des journées selon les clients et chantiers</li>
+                        <li>Autonomie, résolution de problèmes et adaptabilité</li>
+                        <li>Gestion des priorités et suivi opérationnel</li>
+                    </ul>
                 </div>
 
 
                 <div class="w-20">
-                    <h3 class="mb-16">DATE</h3>
+                    <h3 class="mb-16">Formation La Toile – EM Lyon (Fév. 2026 – Juil. 2026)</h3>
 
-                    <h4 class="mb-16">intitulé du poste-entreprise</h4>
+                    <h4 class="mb-16">Objectif reconversion professionnelle, j’ai intégré la formation La Toile afin
+                        d’acquérir les bases du développement et la conception d’interfaces.</h4>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa qui, asperiores earum
-                        veritatis ullam perspiciatis eum officia aspernatur nisi hic neque aperiam natus rerum! Atque
-                        illum libero id voluptatum!</p>
+                    <ul>
+                        <li>Apprentissage du HTML, CSS et JavaScript</li>
+                        <li>Découverte des principes UI/UX Design</li>
+                        <li>Maquettage et prototypage avec Figma</li>
+                        <li>Développement de projets web et logique de programmation</li>
+                        <li>résolution de problèmes et de l’apprentissage technique</li>
+                    </ul>
                 </div>
             </div>
 
@@ -203,38 +282,43 @@
             SECTION SOFTSKILLS 
          ----------------------->
 
-        <section class="flex space-between container-1200 grey mt-128 mb-128">
+        <section class="grey container-1200 mt-128 mb-128">
 
-            <div class="w-20 bg-bleu-card flex align-center column">
+            <h2 class=" ft-size-38 blue mb-64 ft-size-35">Soft-Skills</h2>
 
-                <img class="w-40 radius-rond mt-64 mb-16" src="asset/Team.jpg" alt="">
+            <div class="flex space-between">
 
-                <p class="mb-64">Esprit d'équipe !</p>
+                <div class="w-20 bg-bleu-card flex align-center column">
 
-            </div>
+                    <img class="w-40 radius-rond mt-64 mb-16" src="asset/Team.jpg" alt="">
 
-            <div class="w-20 bg-bleu-card flex align-center column">
+                    <p class="mb-64">Esprit d'équipe !</p>
 
-                <img class="w-40 radius-rond mt-64 mb-16" src="asset/relationnel.jpg" alt="">
+                </div>
 
-                <p class="mb-64">Sens relationnel</p>
+                <div class="w-20 bg-bleu-card flex align-center column">
 
-            </div>
+                    <img class="w-40 radius-rond mt-64 mb-16" src="asset/relationnel.jpg" alt="">
 
-            <div class="w-20 bg-bleu-card flex align-center column">
+                    <p class="mb-64">Sens relationnel</p>
 
-                <img class="w-40 radius-rond mt-64 mb-16" src="asset/Curiosité.jpg" alt="">
+                </div>
 
-                <p class=""mb-64">Curiosité !</p>
+                <div class="w-20 bg-bleu-card flex align-center column">
 
-            </div>
+                    <img class="w-40 radius-rond mt-64 mb-16" src="asset/Curiosité.jpg" alt="">
 
-            <div class="w-20 bg-bleu-card flex align-center column">
+                    <p class="" mb-64">Curiosité !</p>
 
-                <img class="w-40 radius-rond mt-64 mb-16" src="asset/Competiteur.jpg" alt="">
+                </div>
 
-                <p class="mb-64">Compétiteur !</p>
+                <div class="w-20 bg-bleu-card flex align-center column">
 
+                    <img class="w-40 radius-rond mt-64 mb-16" src="asset/Competiteur.jpg" alt="">
+
+                    <p class="mb-64">Compétiteur !</p>
+
+                </div>
             </div>
 
         </section>

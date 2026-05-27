@@ -20,6 +20,17 @@ header{
     transition: background-color 600ms linear;
     padding-left: 32px;
     padding-right: 32px;
+    z-index: 1;
+}
+
+
+h1,h2,h3{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h4,li,p{
+    font-family:"Inter", sans-serif ;
+    font-size: 14px;
 }
 
 
@@ -36,6 +47,12 @@ a{
     text-decoration: none; /*Retire la ligne sous les texte*/
 }
 
+.titre{
+    display: inline-block;
+    border-bottom:3px solid #e2e8f0;
+    padding-bottom: 5px;
+}
+
 .list-type-none{
     list-style-type:none; /*Retire les puces des listes*/ 
 }
@@ -48,6 +65,10 @@ a{
     color: black;
 }
 
+.blue{
+    color: #0b0f19;
+}
+
 .white{
     color: rgb(255, 255, 255);
 }
@@ -56,8 +77,16 @@ a{
     color: #e2e8f0;
 }
 
-.ft-size-38{
-    font-size: 38px;
+.ft-size-35{
+    font-size: 35px;
+}
+
+.ft-size-25{
+    font-size: 25px;
+}
+
+.ft-family{
+    font-family: "Inter", sans-serif;;
 }
 
 .text-center{
@@ -81,8 +110,14 @@ a{
     width: 100%;
 }
 
-w-80{
+.w-80{
     width: 80%;
+}
+
+
+
+.w-60{
+    width: 60%;
 }
 
 .w-50{
@@ -249,10 +284,26 @@ w-80{
     padding-left: 16px;
 }
 
+.pl-32{
+    padding-left: 32px;
+}
+
+.pr-16{
+    padding-right: 16px;
+}
+
+.pr-32{
+    padding-right: 32px;
+}
+
+.padding-64{
+    padding: 64px;
+}
+
 /*Containers*/
 
 .container-1200{
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -276,6 +327,7 @@ w-80{
 .bg-hero2{
     height: 100vh;
     background:linear-gradient(to right,#0b0f19,#2c457f);
+    
 }
 
 .bg-bleu{
@@ -286,11 +338,24 @@ w-80{
 .bg-bleu-2{
     background:linear-gradient(to right,#0b0f19,#2c457f);
     border-radius: 20px;
+    box-shadow:8px 8px 24px #0b0f19;
+}
+
+.bg-bleu-3{
+    background:whitesmoke;
+    border-radius: 20px;
+    box-shadow:8px 8px 24px #0b0f19;
 }
 
 .bg-bleu-card{
     background:linear-gradient(to right,#0b0f19,#2c457f);
     border-radius: 32px;
+    box-shadow:8px 8px 24px #0b0f19;
+    
+}
+
+box-shadow{
+    box-shadow:8px 8px 24px #000000;
 }
 
 
@@ -324,3 +389,35 @@ w-80{
     padding: 12px;
     border-radius: 8px;
 }
+
+/*IMAGE*/
+
+.stack{
+    position: relative;
+    width: 100%;
+
+}
+
+.img{
+    position: absolute;
+    width: 100%;
+}
+
+.img1{
+   width: 100%;
+
+}
+
+.img2{
+    width: 100%;
+    margin-top: -400px;
+    margin-left: 100px;
+}
+
+.img3{
+    width: 100%;
+    margin-top: -380px;
+    margin-left: -80px;
+
+}
+
